@@ -27,38 +27,56 @@ body {
 
 /* 主内容 */
 #main-content {
-  padding: 40px 20px;
+  padding: 30px 15px;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-/* 列表 */
-.app-list {
-  max-width: 400px;
+/* ⭐ 双列网格 */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 /* 卡片 */
 .app-card {
   background: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 .app-card h2 {
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* 版本号 */
+.version {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
 }
 
 /* 按钮 */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 8px 16px;
   background: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 📱 小屏优化（手机一列） */
+@media (max-width: 500px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
 }
