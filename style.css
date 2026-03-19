@@ -1,10 +1,11 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
+  background: #f5f6f7;
   text-align: center;
 }
 
-/* 微信遮罩层 */
+/* 微信遮罩 */
 #wechat-tip {
   position: fixed;
   top: 0;
@@ -26,15 +27,38 @@ body {
 
 /* 主内容 */
 #main-content {
-  margin-top: 120px;
+  padding: 40px 20px;
 }
 
+h1 {
+  margin-bottom: 30px;
+}
+
+/* 列表 */
+.app-list {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* 卡片 */
+.app-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.app-card h2 {
+  margin-bottom: 15px;
+}
+
+/* 按钮 */
 .btn {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 12px 24px;
   background: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 18px;
+  border-radius: 8px;
 }
