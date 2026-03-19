@@ -4,22 +4,33 @@
   <meta charset="UTF-8">
   <title>下载页面</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* 防止页面闪烁（关键） */
+    #wechat-tip, #main-content {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="wechat-tip" class="hidden">
+<!-- 微信提示 -->
+<div id="wechat-tip">
   <div class="tip-box">
     <p>请点击右上角 ···</p>
     <p>选择“在浏览器中打开”后再下载</p>
   </div>
 </div>
 
-<div id="main-content" class="hidden">
+<!-- 正常内容 -->
+<div id="main-content">
   <h1>下载我们的应用</h1>
   <a class="btn" href="https://your-download-link.com">立即下载</a>
 </div>
 
-<script src="main.js"></script>
+<script src="./main.js"></script>
 </body>
-</html>》
+</html>
